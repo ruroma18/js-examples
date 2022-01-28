@@ -1,49 +1,55 @@
-// const trafficLight = function (trafficColor) {
-//   if (trafficColor === 'red') {
-//     return 'Stop';
-//   }
-//   else if (trafficColor === 'yellow') {
-//     return 'Wait';
-//   }
-//   else if (trafficColor === 'green') {
-//     return 'Go';
-//   }
-//   else {
-//     return 'ERROR color';
-//   }
-// }
+//Светофор
+const trafficLight = function (trafficColor) {
+  if (trafficColor === 'red') {
+    return 'Stop';
+  }
+  else if (trafficColor === 'yellow') {
+    return 'Wait';
+  }
+  else if (trafficColor === 'green') {
+    return 'Go';
+  }
+  else {
+    return 'ERROR color';
+  }
+}
 
-// const enterTrafficColor = prompt('Enter traffic color');
-// const result = trafficLight(enterTrafficColor);
-// console.log(result);
+const enterTrafficColor = prompt('Enter traffic color');
+const result = trafficLight(enterTrafficColor);
+console.log(result);
 
 
-// const calculator = function (num1, num2, arithmeticOperator) {
-//   switch (arithmeticOperator) {
-//     case '+':
-//       return num1 + num2;
-//       break;
-//     case '-':
-//       return num1 - num2;
-//       break;
-//     case '*':
-//       return num1 * num2;
-//       break;
-//     case '/':
-//       return num1 / num2;
-//       break;
-//     default:
-//       return 'ERROR operator';
-//   }
-// }
 
-// const enterNum1 = +prompt('Enter first number');
-// const enterNum2 = +prompt('Enter second number');
-// const enterArithmeticOperator = prompt('Enter arithmetic operator');
-// result = calculator(enterNum1, enterNum2, enterArithmeticOperator);
-// console.log(result);
+//Калькулятор
+const calculator = function (num1, num2, arithmeticOperator) {
+  switch (arithmeticOperator) {
+    case '+':
+      return num1 + num2;
+      break;
+    case '-':
+      return num1 - num2;
+      break;
+    case '*':
+      return num1 * num2;
+      break;
+    case '/':
+      return num1 / num2;
+      break;
+    default:
+      return 'ERROR operator';
+  }
+}
 
-const checkSeason = function (numberOfMonth) {
+const enterNum1 = +prompt('Enter first number');
+const enterNum2 = +prompt('Enter second number');
+const enterArithmeticOperator = prompt('Enter arithmetic operator');
+result = calculator(enterNum1, enterNum2, enterArithmeticOperator);
+console.log(result);
+
+
+
+//Проверка месяца
+const checkSeason = (numberOfMonth) => {
   switch (numberOfMonth) {
     case 12:
     case 1:
@@ -63,7 +69,7 @@ const checkSeason = function (numberOfMonth) {
     case 9:
     case 10:
     case 11:
-      return 'Autumn' ;
+      return 'Autumn';
       break;
     default:
       return 'Use correct month number';
