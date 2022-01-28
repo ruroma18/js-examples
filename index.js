@@ -1,109 +1,81 @@
-// const userName = prompt('Введите Ваше имя');
-// const exitPurpose = prompt('Вы уже уходите?')
+const trafficLight = function (trafficColor) {
+  if (trafficColor === 'red') {
+    console.log('Stop');
+  }
+  else if (trafficColor === 'yellow') {
+    console.log('Wait');
+  }
+  else if (trafficColor === 'green') {
+    console.log('Go')
+  }
+  else {
+    console.log('ERROR color')
+  }
+}
 
-// const wordToCompareYes = 'да';
-
-// if (exitPurpose === wordToCompareYes) {
-//   alert('До встречи, ' + userName);
-// }
-// else {
-//   alert('Привет, ' + userName);
-// };
-
-
-// const myFirstFunction = function () {
-//   const userName = prompt('Введите Ваше имя');
-//   const exitPurpose = prompt('Вы уже уходите?')
-
-//   const wordToCompareYes = 'да';
-
-//   if (exitPurpose === wordToCompareYes) {
-//     alert('До встречи, ' + userName);
-//   }
-//   else {
-//     alert('Привет, ' + userName);
-//   }
-// }
-
-// myFirstFunction();
-
-// //является ли число четным
-// const evenOrOdd = function (num1) {
-//   if (isNaN(num1) ) {
-//     return 'ERROR. Please enter number';
-//   }
-
-//   if (num1 % 2 === 1) {
-//     return 'Odd number';
-//   }
-//   else {
-//     return 'Even number';
-//   }
-// }
-
-// const enterNumber = prompt('Please, enter number');
-// const result = evenOrOdd(enterNumber);
-// console.log(result);
+const enterTrafficColor = prompt('Enter traffic color');
+const result = trafficLight(enterTrafficColor);
+console.log(result);
 
 
+const calculator = function (num1, num2, arithmeticOperator) {
+  switch (arithmeticOperator) {
+    case '+':
+      console.log(num1 + num2);
+      break;
+    case '-':
+      console.log(num1 - num2);
+      break;
+    case '*':
+      console.log(num1 * num2);
+      break;
+    case '/':
+      console.log(num1 / num2);
+      break;
+    default:
+      console.log('ERROR operator');
 
-// // // возвращать наименьшее из двух чисел
-// const returnTheLeastNumber = function (num1, num2) {
-//   if (isNaN(num1) || isNaN(num2)) {
-//     return 'ERROR. Please enter number';
-//   }
+  }
+}
 
-//   if (num1 > num2) {
-//     return num2;
-//   }
-//   else {
-//     return num1;
-//   }
-// }
-
-// const enterFirstNumber = prompt('Enter first number');
-// const enterSecondNumber = prompt('Enter Second number');
-// const result = returnTheLeastNumber(enterFirstNumber, enterSecondNumber);
-// console.log(result);
-
-
-// // // функцию которая принимает количестов денег у пользователя и стоимость товара
-// const moneyCalc = function (userMoney, costOfGoods) {
-
-//   if (isNaN(userMoney) || isNaN(costOfGoods)) {
-//     return 'ERROR. Please enter number';
-//   }
-
-//   if (userMoney >= costOfGoods) {
-//     return true;
-//   }
-//   else {
-//     return 'Sorry, You don`t have enough money';
-//   }
-// }
-
-// const enterUserMoney = prompt('Enter money, you have');
-// const enterCostOfGoods = prompt('Enter cost of goods');
-// const result = moneyCalc(enterUserMoney, enterCostOfGoods);
-// console.log(result);
+const enterNum1 = +prompt('Enter first number');
+const enterNum2 = +prompt('Enter second number');
+const enterArithmeticOperator = prompt('Enter arithmetic operator');
+result = calculator(enterNum1, enterNum2, enterArithmeticOperator);
 
 
-// // Создать функцию которая возвращает абсолютную величину числа
-// const absoluteNumValue = function (num) {
-//   if (isNaN(num)) {
-//     return 'ERROR. Please enter number';
-//   }
-//   if (num < 0) {
-//     return absoluteNum = -num;
-//   }
-//   else {
-//     return num
-//   }
-// }
+const checkSeason = function (numberOfMonth) {
+  switch (numberOfMonth) {
+    case 12:
+    case 1:
+    case 2:
+      console.log('Winter');
+      break;
+    case 3:
+    case 4:
+    case 5:
+      console.log('Spring');
+      break;
+    case 6:
+    case 7:
+    case 8:
+      console.log('Summer');
+      break;
+    case 9:
+    case 10:
+    case 11:
+      console.log('Autumn');
+      break;
+    default:
+      console.log('Use correct month number');
+      break;
+  }
+}
 
-// const enterNum = prompt('Enter number');
-// result = absoluteNumValue(enterNum);
-// console.log(result);
+const enterMonthNumber = +prompt('Enter number of month');
+const result = checkSeason(enterMonthNumber);
+
+
 
 
 
