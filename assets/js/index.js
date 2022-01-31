@@ -14,10 +14,11 @@ const trafficLight = function (trafficColor) {
   }
 }
 
+/*
 const enterTrafficColor = prompt('Enter traffic color');
 const result = trafficLight(enterTrafficColor);
 console.log(result);
-
+*/
 
 
 //Калькулятор
@@ -40,11 +41,13 @@ const calculator = function (num1, num2, arithmeticOperator) {
   }
 }
 
+/*
 const enterNum1 = +prompt('Enter first number');
 const enterNum2 = +prompt('Enter second number');
 const enterArithmeticOperator = prompt('Enter arithmetic operator');
 result = calculator(enterNum1, enterNum2, enterArithmeticOperator);
 console.log(result);
+*/
 
 
 
@@ -77,9 +80,11 @@ const checkSeason = (numberOfMonth) => {
   }
 }
 
+/*
 const enterMonthNumber = +prompt('Enter number of month');
 const result = checkSeason(enterMonthNumber);
 console.log(result);
+*/
 
 
 
